@@ -1,8 +1,10 @@
+/* overall style */
 body {
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* header style */
 header {
     display: flex;
     flex-direction: row;
@@ -56,26 +58,6 @@ header {
     border: 2px solid black;
 }
 
-#apple {
-    background-image: url(../assets/products/apple-cinnamon-roll.jpg);
-}
-
-#raisin {
-    background-image: url(../assets/products/raisin-cinnamon-roll.jpg);
-}
-
-#walnut {
-    background-image: url(../assets/products/walnut-cinnamon-roll.jpg);
-}
-
-#double-chocolate {
-    background-image: url(../assets/products/double-chocolate-cinnamon-roll.jpg);
-}
-
-#strawberry {
-    background-image: url(../assets/products/strawberry-cinnamon-roll.jpg);
-}
-
 h3 {
     margin-top: 12px;
     margin-bottom: 25px;
@@ -93,36 +75,14 @@ h3 {
     font-size: 16px;
 }
 
-.bake {
+#original-cinnamon, #apple-cinnamon, #raisin-cinnamon, #walnut-cinnamon, 
+#double-chocolate-cinnamon, #strawberry-cinnamon {
     background-color: white;
     border: 1.8px solid black;
     padding: 6px 8px;
     font-size: 16px;
     width: 180px;
 }
-
-select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-
-select.bake {
-    
-    background-image:
-      linear-gradient(45deg, transparent 50%, black 50%),
-      linear-gradient(135deg, black 50%, transparent 50%);
-      background-position:
-      calc(100% - 18px) calc(1em - 5px),
-      calc(100% - 10px) calc(1em - 5px),
-      100% 0;
-    background-size:
-      9px 8px,
-      8px 9px,
-      2.5em 2.5em;
-    background-repeat: no-repeat;
-
-  }
-
 
 .pack-size {
     display: flex;
@@ -144,7 +104,57 @@ select.bake {
     font-weight: bold;
 }
 
+/* arrow style */
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+select.bake {
+
+    /* the arrow style was adopted from: https://codepen.io/vkjgr/pen/VYMeXp */
+    
+    background-image:
+      linear-gradient(45deg, transparent 50%, black 50%),
+      linear-gradient(135deg, black 50%, transparent 50%);
+      background-position:
+      calc(100% - 18px) calc(1em - 5px),
+      calc(100% - 10px) calc(1em - 5px),
+      100% 0;
+    background-size:
+      9px 8px,
+      8px 9px,
+      2.5em 2.5em;
+    background-repeat: no-repeat;
+
+  }
+
+
+/* main menu - images */
+
+#apple {
+    background-image: url(../assets/products/apple-cinnamon-roll.jpg);
+}
+
+#raisin {
+    background-image: url(../assets/products/raisin-cinnamon-roll.jpg);
+}
+
+#walnut {
+    background-image: url(../assets/products/walnut-cinnamon-roll.jpg);
+}
+
+#double-chocolate {
+    background-image: url(../assets/products/double-chocolate-cinnamon-roll.jpg);
+}
+
+#strawberry {
+    background-image: url(../assets/products/strawberry-cinnamon-roll.jpg);
+}
+
 /* button style */
+/* button1: pack size button */
 .button1 {
     border: 1.8px solid black;
     width: 35px;
@@ -170,7 +180,7 @@ select.bake {
     outline: none;
 }
 
-
+/* button2: add to cart button */
 .button2 {
     border: 1.8px solid black;
     width: 180px;
@@ -187,3 +197,4 @@ select.bake {
 .button2:hover {
     background-color: yellow;
 }
+
