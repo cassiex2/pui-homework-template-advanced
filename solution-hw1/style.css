@@ -39,7 +39,7 @@ header {
 .menu-list {
     display: flex;
     flex-direction: row;
-    gap: 140px;
+    gap: 110px;
     justify-content: end;
     margin-bottom: 1em;
     margin-right: 7em;
