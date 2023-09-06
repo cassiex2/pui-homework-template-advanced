@@ -4,6 +4,19 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+h2 {
+    font-weight: 300;
+    font-size: 28px;
+}
+
+hr {
+    height:3px;
+    color:black;
+    background-color:black;
+    margin-left:0; 
+    margin-bottom: 4rem;
+}
+
 /* header style */
 header {
     display: flex;
