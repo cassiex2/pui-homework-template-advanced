@@ -49,7 +49,6 @@ header {
 .menu-list p:hover {
     background-color: yellow;
     cursor: pointer;
-    font-weight: bold;
 }
 
 /* main menu */
